@@ -1,11 +1,3 @@
-**Confidential. *Please do not make public this document or your solution.***
-
-<p>
-<img width="300" height="87" src="https://i.imgur.com/c0nCwEr.png">
-</p>
-
-# VeriTran's Code Exercise
-
 # Background
 
 Your mission is to create a simple banking system. Think about your personal bank account experience. When in doubt, go for the simplest solution. Focus on building the domain logic, don't bother with creating any kind of user interface until it is explicitly requested.
