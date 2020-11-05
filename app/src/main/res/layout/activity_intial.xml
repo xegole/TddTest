@@ -76,6 +76,38 @@
             android:text="@{viewModel.currentWithdrawal}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/buttonWithdrawal" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Input value to transfer"
+            android:inputType="number"
+            android:lines="1"
+            android:text="@={viewModel.inputDataTransfer}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/labelWithdrawal" />
+
+        <Button
+            android:id="@+id/buttonTransfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{viewModel.onTransferClick}"
+            android:text="transfer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textTransfer" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/labelTransfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@{viewModel.currentTransfer}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonTransfer" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

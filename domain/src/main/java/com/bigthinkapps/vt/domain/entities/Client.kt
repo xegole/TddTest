@@ -14,7 +14,7 @@ data class Client(val id: String = "", val account: Account = Account()) {
     }
 
     fun withdraw(newWithdraw: Double) {
-        if (newWithdraw < 0) {
+        if (newWithdraw <= 0) {
             throw (NegativeValueException())
         }
 
@@ -28,7 +28,7 @@ data class Client(val id: String = "", val account: Account = Account()) {
     }
 
     fun transfer(newTransfer: Double) {
-        if (newTransfer < 0) {
+        if (newTransfer <= 0) {
             throw (NegativeValueException())
         }
 
